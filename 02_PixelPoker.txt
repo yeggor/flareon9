@@ -1,0 +1,4 @@
+x = 0x52414C46 % 0x2E5 = 95
+y = 0x6E4F2D45 % 0x281 = 313
+
+flag = w1nN3r_W!NneR_cHick3n_d1nNer@flare-on.com

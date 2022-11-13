@@ -1,0 +1,22 @@
+1. Unpack 11.py with pyinstxtractor.py and uncompyle6
+2. Hook crypto.ARC4 by the following way:
+
+class ARC4:
+    def __init__(self, key):
+        print(f"ARC4 key: {key}")
+        self.key = key
+
+    def encrypt(self, data):
+        print(f"encrypt data: {data}")
+        return data
+
+    def decrypt(self, data):
+        print(f"decrypt data: {data}")
+        return data
+
+
+3. python .\11.py
+
+ARC4 key: b'PyArmor_Pr0tecteth_My_K3y'
+encrypt data: b'Pyth0n_Prot3ction_tuRn3d_Up_t0_11@flare-on.com'
+...
